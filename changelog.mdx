@@ -1,0 +1,117 @@
+---
+title: Changelog
+description: Review the latest updates, new features, and improvements released for SIVAKUMAR S.
+---
+
+## Recent Releases
+
+<Callout kind="info">
+Check this changelog regularly to stay informed about new features, bug fixes, and improvements that enhance your SIVAKUMAR S documentation experience.
+</Callout>
+
+<Update label="2024-10-15" description="v1.2.0" tags={["feature", "improvement"]}>
+## New Features
+
+- Added real-time collaboration for shared documentation editing
+- Introduced customizable themes with brand color support (e.g., `#009688`)
+
+## Improvements
+
+- Enhanced search functionality with fuzzy matching
+- Optimized page load times by `>30%`
+
+## Bug Fixes
+
+- Fixed markdown parsing issues with nested lists
+- Resolved mobile responsiveness for tables
+</Update>
+
+<Update label="2024-09-20" description="v1.1.0" tags={["bugfix", "feature"]}>
+## New Features
+
+- Integrated API documentation components like `<ParamField>` and `<ResponseField>`
+- Added webhook support for external notifications
+
+## Bug Fixes
+
+- Corrected frontmatter YAML parsing errors
+- Fixed JSX escaping for special characters like `{` and `<`
+
+## Improvements
+
+- Better sidebar navigation with auto-generated TOC
+</Update>
+
+<Update label="2024-08-10" description="v1.0.0" tags={["feature", "breaking"]}>
+## Initial Release
+
+- Core MDX documentation engine with 15+ components
+- YAML frontmatter support for SEO and metadata
+- Built-in support for Lucide icons and syntax highlighting
+
+## Breaking Changes
+
+- Updated component attribute syntax to require double quotes
+</Update>
+
+## Upcoming Features
+
+<Columns cols={3}>
+  <Card title="AI Content Generation" icon="zap" href="/docs/ai-features">
+    Auto-generate documentation from code comments and APIs.
+  </Card>
+  <Card title="Version Control Integration" icon="git-branch" href="/docs/version-control">
+    Seamless GitHub and GitLab sync for changelog automation.
+  </Card>
+  <Card title="Multi-language Support" icon="globe" href="/docs/multi-language">
+    Translate docs automatically with i18n components.
+  </Card>
+</Columns>
+
+## How to Upgrade
+
+Follow these steps to update your SIVAKUMAR S documentation to the latest version.
+
+<Steps>
+  <Step title="Check Current Version" icon="package">
+    View your current version in the dashboard at `https://dashboard.example.com/settings`.
+  </Step>
+  <Step title="Backup Your Docs" icon="database-backup">
+    Export your MDX files to avoid data loss.
+  </Step>
+  <Step title="Run Update" icon="download">
+    <CodeGroup tabs="npm,yarn">
+````bash
+npm update sivakumar-s-docs
+````
+````bash
+yarn upgrade sivakumar-s-docs
+````
+    </CodeGroup>
+  </Step>
+  <Step title="Verify Changes" icon="check-circle">
+    Test your pages for parsing errors and review the changelog.
+  </Step>
+</Steps>
+
+<Callout kind="tip" title="Pro Tip">
+Subscribe to our RSS feed at `/changelog.xml` or enable email notifications in your account settings to get instant updates.
+</Callout>
+
+<ExpandableGroup>
+  <Expandable title="Detailed Migration Guide from v1.0 to v1.2" default-open="true">
+    Review these specific changes:
+
+    | Component | Old Syntax | New Syntax |
+    |-----------|------------|------------|
+    | Callout   | `kind='info'` | `kind="info"` |
+    | CodeGroup | No tabs   | `tabs="JS,Python"` |
+    | Update    | No tags   | `tags={["feature"]}` |
+
+    Test thoroughly after migration.
+  </Expandable>
+  <Expandable title="Deprecations">
+    - Single quotes in attributes are now deprecated
+    - H1 headings in body content will be auto-converted to H2
+  </Expandable>
+</ExpandableGroup>
